@@ -1,10 +1,10 @@
 # api.samuelsandoval.me
 
 > The official API of Samuel Sandoval.
-> 
-## REST Endpoints
 
-Take a look at all of the available [API endpoints](docs/ENDPOINTS.md)!
+<!--
+## REST Endpoints 
+Take a look at all of the available [API endpoints](docs/ENDPOINTS.md)! -->
 
 ## Handbook
 
