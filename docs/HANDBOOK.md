@@ -28,7 +28,7 @@ To spin up the development server, execute `python3 main.py`.
 
 ### Pip 🛹
 
-To check if Pip is installed.
+#### To check if Pip is installed.
 unix/MacOS
 ```
 python -m pip --version
@@ -38,7 +38,7 @@ Windows
 py -m pip --version
 ```
 
-To install pip using Command Line:
+#### To install pip using Command Line: <br/>
 unix/MacOS
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
