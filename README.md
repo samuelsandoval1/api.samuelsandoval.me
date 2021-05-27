@@ -15,4 +15,4 @@ Thumb through the [handbook](docs/HANDBOOK.md) to learn about how to contribute 
 Engineered with  🦖 by [samuelsandoval1][creator_site]
 
 [creator_site]: http://samuelsandoval.me
-<!-- [demo_url]: https://api-ethandavidson-com.herokuapp.com -->
+[demo_url]: https://api-samuelsandoval-me.herokuapp.com
