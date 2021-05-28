@@ -19,7 +19,6 @@ Example
 ```json
 {
    "text": "education description"
-
 }
 ```
 ## GET `/experience`
