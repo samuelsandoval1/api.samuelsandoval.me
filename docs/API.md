@@ -7,7 +7,7 @@ Returns a JSON object detailing Samuel Sandoval's bio.
 Example
 ```json
 {
-   'text': 'about bio'
+   "text": "about bio"
 }
 ```
 
@@ -18,7 +18,7 @@ Returns a JSON object detailing Samuel Sandoval's education history.
 Example
 ```json
 {
-  'text': 'education description'
+   "text": "education description"
 
 }
 ```
@@ -29,7 +29,7 @@ Returns a JSON object detailing Samuel Sandoval's professional experience.
 Example
 ```json
 {
-   'text': 'experience description'
+    "text": "experience description"
 }
 ```
 ## GET `/hobbies`
@@ -39,7 +39,7 @@ Returns a JSON object detailing Samuel Sandoval's hobbies.
 Example
 ```json
 {
-    'text': 'hobby description'
+     "text": "hobby description"
 }
 ```
 ## GET `/projects`
@@ -49,6 +49,6 @@ Returns a JSON object detailing Samuel Sandoval's personal projects.
 Example
 ```json
 {
-   'text': 'project description'
+   "text": "project description"
 }
 ```
