@@ -11,7 +11,7 @@ Take a look at all of the available [API endpoints](docs/ENDPOINTS.md)! -->
 Thumb through the [handbook](docs/HANDBOOK.md) to learn about how to contribute to the API.
 
 ---
-
+[![Heroku App Status](http://heroku-shields.herokuapp.com/api-samuelsandoval-me)][demo_url]
 Engineered with  🦖 by [samuelsandoval1][creator_site]
 
 [creator_site]: http://samuelsandoval.me
