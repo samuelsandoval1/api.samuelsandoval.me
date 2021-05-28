@@ -2,11 +2,10 @@
 
 > The official API of Samuel Sandoval.
 
-<!--
-## REST Endpoints 
-Take a look at all of the available [API endpoints](docs/ENDPOINTS.md)! -->
+## API Endpoints ➡️
+Take a look at all of the available [endpoints](docs/API.md)! 
 
-## Handbook
+## Handbook 📘
 
 Thumb through the [handbook](docs/HANDBOOK.md) to learn about how to contribute to the API.
 
