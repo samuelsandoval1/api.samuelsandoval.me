@@ -1,6 +1,6 @@
 # api.samuelsandoval.me
 
-> The official API of Samuel Sandoval.
+> The official API of Samuel Sandoval. This is an API that provides descriptions about Samuel Sandoval, that is used on his personal website. This was developed using Python 3, Flask framework, and deployed on Heroku.
 
 ## API Endpoints ➡️
 Take a look at all of the available [endpoints](docs/API.md)! 
