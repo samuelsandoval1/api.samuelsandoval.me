@@ -66,3 +66,15 @@ Visit the [Heroku Dashboard][heroku_dash] to deploy the latest version of the si
 
 
 [heroku_dash]: https://dashboard.heroku.com/apps/api-samuelsandoval-me
+
+
+## Testing ✅
+
+### Local Tests
+
+Our local testing consists of unit tests, using Python's unittest module to make sure the requests are properly working.
+
+Run unit tests
+```
+python3 -m unittest testing/test.py
+```
