@@ -32,6 +32,6 @@ jobs:
       run: |
         pylint *.py
         pylint tests/
-    - name: Run Tests
+    - name: Run Unit Tests
       run: |
-        python3 testing/test.py
+        python3 -m unittest testing/test.py
