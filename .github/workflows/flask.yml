@@ -34,4 +34,4 @@ jobs:
         pylint tests/
     - name: Run Unit Tests
       run: |
-        python3 -m unittest testing/test.py
+        python3 -m unittest testing/test_api.py

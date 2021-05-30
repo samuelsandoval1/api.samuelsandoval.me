@@ -30,13 +30,13 @@ class FlaskTest(unittest.TestCase):
         CURR_URL = "{}/hobbies".format(self.API_URL)
         r = requests.get(CURR_URL)
         self.assertEqual(r.status_code, 200)
-        self.assertEqual(len(r.json()), 1)
+        self.assertEqual(len(r.json()), 4)
     
     def test_projects(self):
         CURR_URL = "{}/projects".format(self.API_URL)
         r = requests.get(CURR_URL)
         self.assertEqual(r.status_code, 200)
-        self.assertEqual(len(r.json()), 1)
+        self.assertEqual(len(r.json()), 5)
     
     def test_skills(self):
         CURR_URL = "{}/skills".format(self.API_URL)
