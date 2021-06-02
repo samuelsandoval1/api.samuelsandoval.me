@@ -76,5 +76,5 @@ Our local testing consists of unit tests, using Python's unittest module to make
 
 Run unit tests
 ```
-python3 -m unittest testing/test_api.py
+python3 -m unittest tests/test_api.py
 ```
