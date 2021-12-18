@@ -51,10 +51,9 @@ def hobbies():
 def projects():
     Projects_Text = {
         'project1': '<strong class="header-name">Sudoku GUI Solver</strong><br><i>A Sudoku Solver that uses the backtracking algorithm, and has a GUI to play sudoku. Built using Python, and pygame. View by typing /#sudoku-solver above in the domain.</i><br>\ ',
-        'project2': '<strong class="header-name">NiceBreakers</strong><br><i> A web application designed to make ice breakers fun! Built with Next.JS and Web Sockets. View by typing /#Nicebreakers above in the domain.</i><br>\ ',
-        'project3': '<strong class="header-name">Techish</strong><br><i>A web application to match students to mentors in tech. Built with HTML/CSS, TypeScript and Java Servlets. View by typing /#Techish above in the domain.</i><br>\ ',
-        'project4': '<strong class="header-name">Flix </strong><br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View by typing /#Flix above in the domain </i><br>\ ',
-        'project5': '<strong class="header-name">Personal API </strong><br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. </i><br>',        
+        'project2': '<strong class="header-name">TuffyHacks.com</strong><br><i> A web application designed to make ice breakers fun! Built with Next.JS and Web Sockets. View by typing /#Nicebreakers above in the domain.</i><br>\ ',
+        'project3': '<strong class="header-name">Flix </strong><br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View by typing /#Flix above in the domain </i><br>\ ',
+        'project4': '<strong class="header-name">Personal API </strong><br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. </i><br>',        
     }
     return jsonify(Projects_Text)
 
@@ -62,7 +61,7 @@ def projects():
 @app.route("/skills", methods=["GET"])
 def skills():
     Skills_Text = {
-        'text': '<span class="code">Languages:</span> C++, Python, Swift, JavaScript, TypeScript, HTML, CSS'
+        'text': '<span class="code">Languages:</span> Design Thinking, Product Management, C++, Python, Swift, JavaScript, TypeScript, HTML, CSS, SQL',
     }
     return jsonify(Skills_Text)
 
