@@ -1,7 +1,5 @@
-from flask import Flask, send_from_directory
+from flask import Flask, jsonify, send_file
 from os import path
-from flask import request
-from flask import jsonify
 
 
 app = Flask(__name__)
@@ -80,8 +78,7 @@ def skills():
 
 @app.route("/.well-known/acme-challenge/blFTovXtO8JK9ba0R_llvO6s-L8kIkWjz-xA5iHnSjk")
 def letsencrypt():
-    return "blFTovXtO8JK9ba0R_llvO6s-L8kIkWjz-xA5iHnSjk.fZFglJA3KidF_I4HV0uwi-3yjgoAS0Ou4XnCsEZFqY4"
-
+    return send_file("blFTovXtO8JK9ba0R_llvO6s-L8kIkWjz-xA5iHnSjk")
 # 404
 @app.errorhandler(404)
 def page_not_found(e):
