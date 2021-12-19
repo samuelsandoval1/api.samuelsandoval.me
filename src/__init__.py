@@ -16,7 +16,7 @@ def home():
 @app.route("/about", methods=["GET"])
 def about():
     About_Text = {
-        'text': " Hey there! 👋🏼 <br> \ I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. \
+        'text': " Hey there! 👋🏼 <br> I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. \
           I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management."
     }
     response = jsonify(About_Text)
