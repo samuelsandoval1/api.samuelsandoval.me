@@ -22,8 +22,6 @@ def help_message():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-
-
 # /about
 @app.route("/about", methods=["GET"])
 def about():
@@ -46,8 +44,6 @@ def education():
     return response
 
 # /experience
-
-
 @app.route("/experience", methods=["GET"])
 def experience():
     Experience_Text = {
@@ -57,18 +53,6 @@ def experience():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-# /hobbies
-@app.route("/hobbies", methods=["GET"])
-def hobbies():
-    Hobbies_Text = {
-        'hobby1': '- Making/Drinking Coffee Lattes <br>\ ',
-        'hobby2': '- Doing lighting for concerts and churches. <br>\ ',
-        'hobby3': '- Playing games like Minecraft with friends',
-        'hobby4': '- Traveling to new places'
-    }
-    response = jsonify(Hobbies_Text)
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
 
 # /projects
 @app.route("/projects", methods=["GET"])
@@ -83,15 +67,6 @@ def projects():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-# /skills
-@app.route("/skills", methods=["GET"])
-def skills():
-    Skills_Text = {
-        'text': '<span class="code">Languages:</span> Design Thinking, Product Management, C++, Python, Swift, JavaScript, TypeScript, HTML, CSS, SQL',
-    }
-    response = jsonify(Skills_Text)
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
 
 # 404
 @app.errorhandler(404)

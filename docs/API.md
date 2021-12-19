@@ -31,16 +31,7 @@ Example
     "text": "experience description"
 }
 ```
-## GET `/hobbies`
 
-Returns a JSON object detailing Samuel Sandoval's hobbies.
-
-Example
-```json
-{
-     "text": "hobby description"
-}
-```
 ## GET `/projects`
 
 Returns a JSON object detailing Samuel Sandoval's personal projects.
