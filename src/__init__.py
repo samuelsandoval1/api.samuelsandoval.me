@@ -1,48 +1,51 @@
 from flask import Flask, jsonify, send_file
 from os import path
+from flask_cors import CORS
 
 
 app = Flask(__name__)
+CORS(app)
 
 
+# / (main page)
 @app.route('/')
 def home():
   return "<h1>samuelsandoval.me API</h1><p>This site is an API that allows users to learn more about Samuel Sandoval</p>"
 
 # /about
-
-
 @app.route("/about", methods=["GET"])
 def about():
     About_Text = {
         'text': " Hey there! 👋🏼 <br> \ I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. \
           I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management."
     }
-    return jsonify(About_Text)
+    response = jsonify(About_Text)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 # /education
-
-
 @app.route("/education", methods=["GET"])
 def education():
     Education_Text = {
         'text': '<strong class="header-name">California State University, Fullerton</strong><br>B.S. Computer Science, Expected Grad: May 2023'
     }
-    return jsonify(Education_Text)
+    response = jsonify(Education_Text)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 # /experience
 
 
 @app.route("/experience", methods=["GET"])
 def experience():
-    About_Text = {
+    Experience_Text = {
         'text': '<strong class="header-name">Microsoft (May 2021)</strong><br><i>Incoming Explore Intern</i><br><strong class="header-name">Google (May 2020 - August 2020)</strong><br><i>STEP Intern</i>'
     }
-    return jsonify(About_Text)
+    response = jsonify(Experience_Text)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 # /hobbies
-
-
 @app.route("/hobbies", methods=["GET"])
 def hobbies():
     Hobbies_Text = {
@@ -51,11 +54,11 @@ def hobbies():
         'hobby3': '- Playing games like Minecraft with friends',
         'hobby4': '- Traveling to new places'
     }
-    return jsonify(Hobbies_Text)
+    response = jsonify(Hobbies_Text)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 # /projects
-
-
 @app.route("/projects", methods=["GET"])
 def projects():
     Projects_Text = {
@@ -64,21 +67,20 @@ def projects():
         'project3': '<strong class="header-name">Flix </strong><br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View by typing /#Flix above in the domain </i><br>\ ',
         'project4': '<strong class="header-name">Personal API </strong><br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. </i><br>',
     }
-    return jsonify(Projects_Text)
+    response = jsonify(Projects_Text)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 # /skills
-
-
 @app.route("/skills", methods=["GET"])
 def skills():
     Skills_Text = {
         'text': '<span class="code">Languages:</span> Design Thinking, Product Management, C++, Python, Swift, JavaScript, TypeScript, HTML, CSS, SQL',
     }
-    return jsonify(Skills_Text)
+    response = jsonify(Skills_Text)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
-@app.route("/.well-known/acme-challenge/blFTovXtO8JK9ba0R_llvO6s-L8kIkWjz-xA5iHnSjk")
-def letsencrypt():
-    return send_file("blFTovXtO8JK9ba0R_llvO6s-L8kIkWjz-xA5iHnSjk")
 # 404
 @app.errorhandler(404)
 def page_not_found(e):
