@@ -1,16 +1,19 @@
-from flask import Flask
+from flask import Flask, send_from_directory
 from os import path
 from flask import request
 from flask import jsonify
-from flask import render_template
+
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def home():
   return "<h1>samuelsandoval.me API</h1><p>This site is an API that allows users to learn more about Samuel Sandoval</p>"
 
 # /about
+
+
 @app.route("/about", methods=["GET"])
 def about():
     About_Text = {
@@ -20,6 +23,8 @@ def about():
     return jsonify(About_Text)
 
 # /education
+
+
 @app.route("/education", methods=["GET"])
 def education():
     Education_Text = {
@@ -28,6 +33,8 @@ def education():
     return jsonify(Education_Text)
 
 # /experience
+
+
 @app.route("/experience", methods=["GET"])
 def experience():
     About_Text = {
@@ -36,6 +43,8 @@ def experience():
     return jsonify(About_Text)
 
 # /hobbies
+
+
 @app.route("/hobbies", methods=["GET"])
 def hobbies():
     Hobbies_Text = {
@@ -47,17 +56,21 @@ def hobbies():
     return jsonify(Hobbies_Text)
 
 # /projects
+
+
 @app.route("/projects", methods=["GET"])
 def projects():
     Projects_Text = {
         'project1': '<strong class="header-name">Sudoku GUI Solver</strong><br><i>A Sudoku Solver that uses the backtracking algorithm, and has a GUI to play sudoku. Built using Python, and pygame. View by typing /#sudoku-solver above in the domain.</i><br>\ ',
         'project2': '<strong class="header-name">TuffyHacks.com</strong><br><i> A web application designed to make ice breakers fun! Built with Next.JS and Web Sockets. View by typing /#Nicebreakers above in the domain.</i><br>\ ',
         'project3': '<strong class="header-name">Flix </strong><br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View by typing /#Flix above in the domain </i><br>\ ',
-        'project4': '<strong class="header-name">Personal API </strong><br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. </i><br>',        
+        'project4': '<strong class="header-name">Personal API </strong><br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. </i><br>',
     }
     return jsonify(Projects_Text)
 
 # /skills
+
+
 @app.route("/skills", methods=["GET"])
 def skills():
     Skills_Text = {
@@ -65,7 +78,12 @@ def skills():
     }
     return jsonify(Skills_Text)
 
+@app.route("/.well-known/acme-challenge/blFTovXtO8JK9ba0R_llvO6s-L8kIkWjz-xA5iHnSjk")
+def letsencrypt():
+    return "blFTovXtO8JK9ba0R_llvO6s-L8kIkWjz-xA5iHnSjk.fZFglJA3KidF_I4HV0uwi-3yjgoAS0Ou4XnCsEZFqY4"
+
 # 404
 @app.errorhandler(404)
 def page_not_found(e):
     return "<h1>404</h1><p>The resource could not be found.</p>", 404
+
