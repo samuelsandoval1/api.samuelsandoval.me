@@ -13,7 +13,7 @@ def home():
   return "<h1>samuelsandoval.me API</h1><p>This site is an API that allows users to learn more about Samuel Sandoval</p>"
 
 # /help
-@app.route(/help_message)
+@app.route('/help_message')
 def help_message():
     Help_Text = {
         'text' : 'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>'
