@@ -16,7 +16,7 @@ def home():
 @app.route('/help_message')
 def help_message():
     Help_Text = {
-        'text' : 'Supported commands: <span class="code">about</span>, <span class="code">education</span>, <span class="code">projects</span>, <span class="code">skills</span>, <span class="code">hobbies</span>, <span class="code">clear</span>'
+        'text' : 'Supported commands: <span class="code">about</span>, <span class="code">education</span>,  <span class="code">experience</span>, <span class="code">projects</span>, <span class="code">clear</span>'
     }
     response = jsonify(Help_Text)
     response.headers.add('Access-Control-Allow-Origin', '*')
