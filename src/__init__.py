@@ -22,7 +22,6 @@ def help_message():
     response = jsonify(Help_Text)
     response.headers.add('Access-Control-Allow-Origin', '*')
     response.headers.add('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
-
     return response
 
 
