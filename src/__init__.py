@@ -14,7 +14,7 @@ def home():
 
 
 # /help
-@app.route('/help_message')
+@app.route('/help_message', methods=["GET"])
 def help_message():
     Help_Text = {
         'text' : 'Supported commands: <span class="code">about</span>, <span class="code">education</span>,  <span class="code">experience</span>, <span class="code">the gospel</span>, <span class="code">projects</span>, <span class="code">clear</span>'
