@@ -26,8 +26,13 @@ def help_message():
 @app.route("/about", methods=["GET"])
 def about():
     About_Text = {
-        'text': " Hey there! 👋🏼 <br> I'm Sam, a sophomore studying Computer Science at California State University, Fullerton. \
-          I love programming, building projects, and teaching others about new technologies. I'm interested in Developer Advocacy and Product Management."
+        'text': " Hey there! 👋🏼 <br> I'm an undergraduate student  studying Computer Science at California State University, Fullerton (CSUF). \
+          I'm passionate about developing products and technologies that impact my community and people everywhere. <br><br> \
+          At CSUF,  you can catch me doing some work in the TSU, hanging out in the ECS Courtyard or at my favorite coffee shop in Fullerton.  \
+          I'm an active Executive Director of TuffyHacks, CSUF's premier student-run hackathon which focuses on uniting hackers to create technical solutions that solve real-world problems. \
+          While I'm not on the grind, I'll sometimes travel around, make coffee lattes or hang out with friends. <br><br>\
+          I love learning about new ideas, technology or experiences, so feel free to reach out to me. <br><br>\
+         Let's <strong><a href='https://linkedin.com/in/~samuel/'>connect</a><strong>"
     }
     response = jsonify(About_Text)
     response.headers.add('Access-Control-Allow-Origin', '*')
