@@ -58,15 +58,14 @@ def experience():
 @app.route("/projects", methods=["GET"])
 def projects():
     Projects_Text = {
-        'project1': '<strong class="header-name">Sudoku GUI Solver</strong><br><i>A Sudoku Solver that uses the backtracking algorithm, and has a GUI to play sudoku. Built using Python, and pygame. View by typing /#sudoku-solver above in the domain.</i><br>\ ',
-        'project2': '<strong class="header-name">TuffyHacks.com</strong><br><i> A web application designed to make ice breakers fun! Built with Next.JS and Web Sockets. View by typing /#Nicebreakers above in the domain.</i><br>\ ',
-        'project3': '<strong class="header-name">Flix </strong><br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View by typing /#Flix above in the domain </i><br>\ ',
-        'project4': '<strong class="header-name">Personal API </strong><br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. </i><br>',
+        'project1': '<strong class="header-name">TuffyHacks.com</strong><br>Product Manager Lead<br><i> Lead the product efforts to develop a hacakthon participant portal. This portal allows hackers to learn more about TuffyHacks and have a positive hackathon experience. View by typing /#TuffyHacks above in the domain.</i><br>',
+        'project2': '<strong class="header-name">GP-Aide App </strong><br>Product Manager Lead<br><i>Designed product specs and led the product efforts and design and develop an iOS mobile application that allows users to calculate their semester grade point average. View by typing /#GPAide above in the domain.</i><br>',
+        'project3': '<strong class="header-name">Personal API </strong><br>Personal Project<br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. View by typing /#API above in the domain.</i><br>',
+        'project4': '<strong class="header-name">Flix </strong><br>Personal Project<br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View by typing /#Flix above in the domain.</i><br>',
     }
     response = jsonify(Projects_Text)
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
-
 
 # 404
 @app.errorhandler(404)
