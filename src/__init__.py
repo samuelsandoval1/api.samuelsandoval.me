@@ -101,7 +101,7 @@ def projects():
         'project2': '<strong class="header-name">GP-Aide App </strong><br>Product Manager Lead<br><i>Designed product specs and led the product efforts and design and develop an iOS mobile application that allows users to calculate their semester grade point average. View by typing /#GPAide above in the domain.</i><br>',
         'project3': '<strong class="header-name">Personal API </strong><br>Personal Project<br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. View by typing /#API above in the domain.</i><br>',
         'project4': '<strong class="header-name">Flix </strong><br>Personal Project<br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View by typing /#Flix above in the domain.</i><br><br>',
-        'scroll':   '<strong>Scroll up in the terminal.</strong> '
+        'scroll':   '<b>Scroll up in the terminal.</b> '
     }
     response = jsonify(Projects_Text)
     response.headers.add('Access-Control-Allow-Origin', '*')
