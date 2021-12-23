@@ -35,8 +35,8 @@ def about():
                 I'm an active Executive Director of TuffyHacks, CSUF's premier student-run hackathon which focuses on uniting hackers to create technical solutions that solve real-world problems. \
                 While I'm not on the grind, I'll sometimes travel around, make coffee lattes or hang out with friends. <br><br>\
                 I love learning about new ideas, technology or experiences, so feel free to reach out to me. <br><br>\
-                Let's <strong><a href='https://linkedin.com/in/~samuel/'>connect</a><strong><br><br> \
-                Scroll up in the terminal."
+                Let's <strong><a href='https://linkedin.com/in/~samuel/'>connect</a></strong><br><br> \
+                <strong>Scroll up in the terminal.</strong>"
     }
     response = jsonify(About_Text)
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -85,7 +85,7 @@ def the_gospel():
             <strong class="header-name">Repentance: the Character of Saving Faith</strong><br> \
             True faith is always accompanied by repentance from sin. Repentance is agreeing with God that you are sinful, confessing your sins to Him, and making a conscious choice to turn from sin (Luke 13:3, 5; 1 Thessalonians 1:9), pursue Christ (Matthew 11: 28-30; John 17:3) and obey Him (1 John 2:3). It isn’t enough to believe certain facts about Christ. Even Satan and his demons believe in the true God (James 2:19), but they don’t love and obey Him. Saving faith is always accompanied by an increasing pattern of obedience (Ephesians 2:10).<br><br> \
             For more information, check out this <strong><a href="https://www.cru.org/us/en/train-and-grow/spiritual-growth/core-christian-beliefs/what-is-gospel/">resource</a></strong> <br><br> \
-            Scroll up on the terminal.' 
+            <strong>Scroll up in the terminal.</strong>' 
 
     }
     response = jsonify(Gospel_Text)
@@ -101,7 +101,7 @@ def projects():
         'project2': '<strong class="header-name">GP-Aide App </strong><br>Product Manager Lead<br><i>Designed product specs and led the product efforts and design and develop an iOS mobile application that allows users to calculate their semester grade point average. View by typing /#GPAide above in the domain.</i><br>',
         'project3': '<strong class="header-name">Personal API </strong><br>Personal Project<br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. View by typing /#API above in the domain.</i><br>',
         'project4': '<strong class="header-name">Flix </strong><br>Personal Project<br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View by typing /#Flix above in the domain.</i><br><br>',
-        'scroll':   'Scroll up on the terminal. '
+        'scroll':   '<strong>Scroll up in the terminal.</strong> '
     }
     response = jsonify(Projects_Text)
     response.headers.add('Access-Control-Allow-Origin', '*')
