@@ -31,6 +31,17 @@ Example
     "text": "experience description"
 }
 ```
+## GET `/gospel`
+
+Returns a JSON object detailing the gospel and what 
+it means to a Christian.
+
+Example
+```json
+{
+    "text": "the gospel explained"
+}
+```
 
 ## GET `/projects`
 

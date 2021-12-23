@@ -26,23 +26,17 @@ class FlaskTest(unittest.TestCase):
         self.assertEqual(r.status_code, 200)
         self.assertEqual(len(r.json()), 1)
 
-    def test_hobbies(self):
-        CURR_URL = "{}/hobbies".format(self.API_URL)
+    def test_gospel(self):
+        CURR_URL = "{}/gospel".format(self.API_URL)
         r = requests.get(CURR_URL)
         self.assertEqual(r.status_code, 200)
-        self.assertEqual(len(r.json()), 4)
+        self.assertEqual(len(r.json()), 2)
     
     def test_projects(self):
         CURR_URL = "{}/projects".format(self.API_URL)
         r = requests.get(CURR_URL)
         self.assertEqual(r.status_code, 200)
         self.assertEqual(len(r.json()), 5)
-    
-    def test_skills(self):
-        CURR_URL = "{}/skills".format(self.API_URL)
-        r = requests.get(CURR_URL)
-        self.assertEqual(r.status_code, 200)
-        self.assertEqual(len(r.json()), 1)
 
     def test_error(self):
         CURR_URL = "{}/page".format(self.API_URL)
