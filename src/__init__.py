@@ -97,10 +97,10 @@ def the_gospel():
 @app.route("/projects", methods=["GET"])
 def projects():
     Projects_Text = {
-        'project1': '<strong class="header-name">TuffyHacks.com</strong><br>Product Manager Lead<br><i> Lead the product efforts to develop a hacakthon participant portal. This portal allows hackers to learn more about TuffyHacks and have a positive hackathon experience. View <strong><a href="https://samuelsandoval.me/#TuffyHacks">here</a></strong>.</i><br>',
-        'project2': '<strong class="header-name">GP-Aide App </strong><br>Product Manager Lead<br><i>Designed product specs and led the product efforts and design and develop an iOS mobile application that allows users to calculate their semester grade point average. View <strong><a href="https://samuelsandoval.me/#GPAide">here</a></strong>.</i><br>',
-        'project3': '<strong class="header-name">Personal API </strong><br>Personal Project<br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. View <strong><a href="https://samuelsandoval.me/#API">here</a></strong>.</i><br>',
-        'project4': '<strong class="header-name">Flix </strong><br>Personal Project<br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View <strong><a href="https://samuelsandoval.me/#Flix">here</a></strong>.</i><br><br>',
+        'project1': '<strong class="header-name">TuffyHacks.com</strong><br>Product Manager Lead<br><i> Lead the product efforts to develop a hacakthon participant portal. This portal allows hackers to learn more about TuffyHacks and have a positive hackathon experience. View <strong><a href="https://tuffyhacks.com">here</a></strong>.</i><br>',
+        'project2': '<strong class="header-name">GP-Aide App </strong><br>Product Manager Lead<br><i>Designed product specs and led the product efforts and design and develop an iOS mobile application that allows users to calculate their semester grade point average. View <strong><a href="https://github.com/samuelsandoval1/223w-gp-aide">here</a></strong>.</i><br>',
+        'project3': '<strong class="header-name">Personal API </strong><br>Personal Project<br><i> An API designed to display information about Samuel Sandoval. This website is fetching from this API. Built using Python and Flask. View <strong><a href="http://github.com/samuelsandoval1/api.samuelsandoval.me">here</a></strong>.</i><br>',
+        'project4': '<strong class="header-name">Flix </strong><br>Personal Project<br><i>An iOS mobile application that allows users to browse movies now playing in theaters. Built with Xcode, Swift and the Movie Database API. View <strong><a href="http://github.com/samuelsandoval1/Flix">here</a></strong>.</i><br><br>',
         'scroll':   '<b>Scroll up in the terminal.</b> '
     }
     response = jsonify(Projects_Text)
