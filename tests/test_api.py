@@ -24,7 +24,7 @@ class FlaskTest(unittest.TestCase):
         CURR_URL = "{}/experience".format(self.API_URL)
         r = requests.get(CURR_URL)
         self.assertEqual(r.status_code, 200)
-        self.assertEqual(len(r.json()), 1)
+        self.assertEqual(len(r.json()), 3)
 
     def test_gospel(self):
         CURR_URL = "{}/gospel".format(self.API_URL)
