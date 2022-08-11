@@ -60,7 +60,7 @@ def experience():
     Experience_Text = {
         'exp1':'<strong class="header-name">USAA (May 2022 - August 2022) </strong><br><i>Digital/Technical Product Manager Intern</i><br>',
         'exp2':'<strong class="header-name">  Microsoft (May 2021 - August 2021) </strong><br><i>Explorer Intern</i><br>',
-        'exp3':'<strong class="header-name"> Google (May 2020 - August 2020) </strong><br><i>STEP Intern</i>'
+        'exp3':'<strong class="header-name"> Google (May 2020 - August 2020) </strong><br><i>STEP Intern</i><br>'
         #'exp4' 
     }
     response = jsonify(Experience_Text)
